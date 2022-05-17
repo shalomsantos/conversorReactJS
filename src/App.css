@@ -1,0 +1,120 @@
+@keyframes gradient{
+    from{
+        background-position: 0 50%;
+    }
+    to{
+        background-position: 100% 50%;
+    }
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: linear-gradient(to right top, red, blue);
+    animation: gradient 10s ease infinite alternate;
+    background-size: 300% 300%;
+}
+html{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.CardMoeda{
+    height: 27rem;
+    width: 22rem;
+    text-align: center;
+    background: rgba(233, 233, 233, 0.384);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.26);
+    border-radius: 2rem;
+    transition: 300ms;
+}
+.CardMoeda_escolhida{
+    height: 27rem;
+    width: 40rem;
+    text-align: center;
+    background: rgba(233, 233, 233, 0.384);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    transition: 300ms;
+}
+.cardMoedaMenor{
+    height: 26.3rem;
+    width: 20rem;
+    padding: 9rem 1.5rem 2rem 1.5rem;
+    background: rgba(233, 233, 233, 0.384);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px solid rgba(255, 255, 255, 0.26);
+}
+.titulo{
+    display: flex;
+
+}
+.rodape{
+    display: flex;
+
+}
+h2{
+    color: white;
+}
+input{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1rem;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background: #c4c4c46c;
+    border: none;
+    box-shadow: 0rem 0.1rem #ffffff;
+    transition: 300ms;
+    width: 9rem;
+    outline: none;
+}
+input:hover{
+    box-shadow: 0rem 0.2rem #ffffff;
+}
+input::placeholder{
+    color: rgb(231, 231, 231)
+}
+.btn{
+    color: white;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    border-bottom: 0.1rem solid #707070;
+    border-right: 0.1rem solid #707070;
+    transition: 300ms;
+}
+.btn:active{
+    transition: 1ms;
+    border-right: 0rem solid #707070;
+    border-bottom: 0rem solid #707070;
+}
+.btnLimpar{
+    background: rgba(255, 255, 0, 0.623);
+}
+.btnConverter{
+    background: rgba(0, 255, 0, 0.658);
+}
+.btnMoedaEsquerda{
+    background: rgb(55, 111, 216);
+}
+.btnMoedaDireita{
+    background: rgb(55, 111, 216);
+}
