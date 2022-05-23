@@ -1,27 +1,27 @@
 import React, { useState } from 'react';
-import Api from './Componentes/api';
+//import Api from './Componentes/api';
 import './App.css';
 
 const App = () => {
   const [moedaEsquerda, setMoedaEsquerda] = useState("CardMoeda");
   
-  const [cotacao, setCotacao] = useState([]);
+  // const [cotacao, setCotacao] = useState([]);
     
-  const componentDidMount = async () => {
-    const resposta = await Api.get('');
-    this.setState({ setCotacao: resposta.data.USD_BRL });
-    setCotacao(resposta.data.USD_BRL)
+  // const componentDidMount = async () => {
+  //   const resposta = await Api.get('');
+  //   this.setState({ setCotacao: resposta.data.USD_BRL });
+  //   setCotacao(resposta.data.USD_BRL)
 
-    console.log(cotacao)
-  }
+  //   console.log(cotacao)
+  // }
 
-  const converter = () => {
-    this.valor = this.valor * cotacao.currency
-    console.log(this.valor)
-  }
+  // const converter = () => {
+  //   this.valor = this.valor * cotacao.currency
+  //   console.log(this.valor)
+  // }
 
   const escolha = () => {
-    if (moedaEsquerda == "CardMoeda_escolhida"){
+    if (moedaEsquerda === "CardMoeda_escolhida"){
       setMoedaEsquerda("CardMoeda")  
     }
     else  setMoedaEsquerda("CardMoeda_escolhida")
@@ -38,7 +38,7 @@ const App = () => {
         <input id="valor" ype="text" placeholder="Valor R$..."></input>
         <div className="rodape">
           <button className="btn btnLimpar" type="button">Limpar</button>
-          <button className="btn btnConverter" type="button" onclick={converter}>Converter</button>
+          <button className="btn btnConverter" type="button">Converter</button>
         </div>
       </div>
     </div>
